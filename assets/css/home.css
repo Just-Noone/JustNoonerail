@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+:root {
+
+  /** Main **/
+
+  --main : #a100e5;
+  --magenta : #ff00ff;
+  --lpurple : #ffadfe;
+
+  /** Non Color **/
+
+  --white : #fff;
+  --black : #000;
+  --grey : #444444;
+
+  /** Basic **/
+
+  --red : #ff0000;
+  --orange : #ffa500;
+  --yellow : #ffff00;
+  --green : #008000;
+  --blue : #0000ff;
+
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #a100e5 #f3d1ff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f3d1ff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #a100e5;
+    border-radius: 20px;
+    border: 9px none #ffffff;
+  }
+
+.heromainb{
+  width: 100%;
+  height: 500px;
+  background-color: var(--white);
+}
+.herobgimg{
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  background-attachment: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: cover;
+
+}
+.heromain{
+  width: 100%;
+  padding: 125px;
+  height: 500px;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  vertical-align: middle;
+  z-index: 1;
+}
+.typedjs{
+  background-color: var(--main);
+  min-width: 150px;
+  backdrop-filter: blur(5px)saturate(5%);
+  border-color: var(--white);
+  outline: var(--white);
+  border-radius: 5px;
+  padding: 30px 0px 30px 00px;
+  color: var(--white);
+  font-size: 50px;
+  align-self: center;
+  text-align: center;
+  font-weight: bolder;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.bexpl{
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--white);
+  text-align: center;
+  background-color: var(--magenta);
+  border: solid 0px var(--white);
+  transition: 50ms ease all;
+  border-radius: 5px;
+}
+.bexpl:hover{
+  border: solid 3px var(--white);
+  transition: 50ms ease all;
+  scale: 100.5%;
+}
+
+.stickets{
+  padding: 20px;
+  width: 100%;
+  height: 300px;
+  background-color: var(--main);
+}
+.tickets{
+  background-color: var(--white);
+  display: grid;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 70px 10px 70px 10px;
+}
+@media screen and (max-width: 970px) {
+  .tickets {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 30px 10px 30px 10px;
+  }
+}
+.ticketsfrom{
+  background-color: var(--white);
+  color: rgb(68, 68, 68);
+  text-align: center;
+  border-radius: 5px;
+  border-color: var(--magenta);
+  border-style: solid;
+  min-width: fit-content;
+  margin: 10px 30px 10px 30px;
+  height: 50px;
+  width: 45%;
+  transition: 0.25s;
+}
+@media screen and (max-width: 970px) {
+  .ticketsfrom{
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+  }
+}
+
+.ticketsfrom:focus{
+  border-color: var(--lpurple);
+  transition: 0.5s;
+  border-radius: 100px;
+}
+.ticketsto{
+  background-color: var(--white);
+  text-align: center;
+  float: right;
+  color: rgb(68, 68, 68);
+  border-radius: 5px;
+  min-width: fit-content;
+  border-color: var(--magenta);
+  border-style: solid;
+  margin: 10px 30px 10px 30px;
+  height: 50px;
+  width: 45%;
+  transition: 0.25s;
+}
+@media screen and (max-width: 970px) {
+  .ticketsto{
+    width: 100%;
+    margin: 5px 0px 5px 0px;
+    
+  }
+}
+.ticketsto:focus{
+  border-color: var(--lpurple);
+  transition: 0.5s;
+  border-radius: 100px;
+}
+.inputs{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+@media screen and (max-width: 970px) {
+  .inputs{
+    display: grid;
+  }
+}
+.SubTick{
+  width: 100%;
+  align-self: center;
+  vertical-align: middle;
+  padding: 10px 5px 10px 5px;
+  margin: 10px 30px 10px 30px;
+  background-color: var(--magenta);
+  color: var(--white);
+  border-radius: 5px;
+  align-content: center;
+  border-style: none;
+  min-width: fit-content;
+  transition: 0.1s all;
+}
+@media screen and (max-width: 970px) {
+  .SubTick{
+    justify-self: center;
+  }
+}
+.SubTick:hover{
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--lpurple);
+  background-color: var(--white);
+  color: var(--magenta);
+  transition: 0.1s all;
+}
+.tickets-header{
+  width: 100%;
+}
