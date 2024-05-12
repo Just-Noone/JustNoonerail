@@ -47,6 +47,11 @@
     border: 9px none #ffffff;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+  
+
 .heromainb{
   width: 100%;
   height: 500px;

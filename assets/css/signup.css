@@ -13,8 +13,12 @@
     --green : #008000;
     --blue : #0000ff;
     --red : #ff0000;
+    --lgray : #b4b4b4;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
   
 
 .center{
@@ -119,4 +123,27 @@
     justify-content:center;
     padding: 2.5px;
     color: var(--white);
+}
+
+.input{
+    padding: 5px;
+    border-radius: 10px;
+    border: solid var(--lgray) 1px;
+    margin: 1px;
+    transition: 0.2s;
+}
+
+.input:focus {
+    border: 3px solid var(--lgray);
+    outline: none;
+    scale: 102%;
+    transition: 0.2s;
+}
+
+.validation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #eeeeee;
 }
