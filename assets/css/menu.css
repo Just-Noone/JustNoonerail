@@ -14,6 +14,9 @@
   --red : #ff0000;
 }
 
+head{
+  display: none;
+}
 
 *{
   margin: 0;
