@@ -14,8 +14,8 @@
     <link rel="icon" type="image/svg+xml" sizes="192x192" href="./assets/svg/logo.svg">
     <meta name="description" content="The official JNR website">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/signup.css">
-    <link rel="stylesheet" href="/assets/css/menu.css"> <!-- MENU -->
+    <link rel="stylesheet" href="./assets/css/signup.css">
+    <link rel="stylesheet" href="./assets/css/menu.css"> <!-- MENU -->
     <!--Icons--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -27,7 +27,7 @@
           <div class="wrapper">
             <div class="logo" style="display: flex; align-items: center;">
               <a href="../" class="logolink" style="width: 100%;">
-                <img src="/assets/svg/logo.svg" alt="" style="width: 10%; height: 10%; vertical-align: middle;"></img>
+                <img src="./assets/svg/logo.svg" alt="" style="width: 10%; height: 10%; vertical-align: middle;"></img>
               </a>
             </div>
             <input type="radio" name="slider" id="menu-btn">
@@ -54,7 +54,7 @@
                 <div class="mega-box">
                   <div class="content">
                     <div class="row">
-                      <img src="/assets/svg/logo.svg" alt="" style="width: 80%; height: 80%;">
+                      <img src="./assets/svg/logo.svg" alt="" style="width: 80%; height: 80%;">
                     </div>
                     <div class="row">
                       <header>Special services</header>
@@ -85,14 +85,14 @@
 
             <div class="center">
                 <div class="img">
-                    <img src="/assets/png/jachpark.webp" alt="jachowice park" class="backgroundimg">
+                    <img src="./assets/png/jachpark.webp" alt="jachowice park" class="backgroundimg">
                 </div>
                 <div class="content">
                     <div class="text">
                         <h1 class="text1">Register</h1>
                     </div>
                     <div class="formframe">
-                        <form class="form" name="signup" onsubmit="return validateForm()" method="post" required>
+                        <form class="form" name="signup" onsubmit="return validateForm()" action="./assets/js/accountfunc.js" method="post" required>
                             <input class="input" class="email" placeholder="email" >
                             <input class="input" class="name" placeholder="username" >
                             <input class="input" class="password" placeholder="password" >

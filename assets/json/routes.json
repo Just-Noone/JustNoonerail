@@ -1,0 +1,137 @@
+[
+  {
+    "color": 11044520,
+    "name": "Roshinsky prospekt temp line",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "-4195576870400564211_11044520",
+      "-7777892213810141562_11044520",
+      "-7777892213810141562_11044520",
+      "-4195576870400564211_11044520"
+    ],
+    "durations": [0, 0, 0],
+    "densities": [0, 0, 0, 0],
+    "circular": ""
+  },
+  {
+    "color": 4955374,
+    "name": "Test by Bzu",
+    "number": "",
+    "type": "train_normal",
+    "stations": [],
+    "durations": [],
+    "densities": [],
+    "circular": ""
+  },
+  {
+    "color": 8420396,
+    "name": "1号线|Line 1",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "4229092572496653058_8420396",
+      "-1681291607264729468_8420396",
+      "-2747362958994019593_8420396",
+      "-1681291607264729468_8420396"
+    ],
+    "durations": [962, 1539, 1501],
+    "densities": [0, 241, 95, 0],
+    "circular": ""
+  },
+  {
+    "color": 9587423,
+    "name": "Tobolsk tram test",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "-1320736708412813150_9587423",
+      "-7135146909227703467_9587423"
+    ],
+    "durations": [737],
+    "densities": [0, 0],
+    "circular": ""
+  },
+  {
+    "color": 11148830,
+    "name": "Керенско-Суриковская линия|Kerensko-Surikovkaya Line||Track 1",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "-5380681368370404036_11148830",
+      "-4195576870400564211_11148830",
+      "-3672144912401530487_11148830"
+    ],
+    "durations": [1127, 1219],
+    "densities": [0, 85, 57],
+    "circular": ""
+  },
+  {
+    "color": 8420396,
+    "name": "1号线|Line 1",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "-1681291607264729468_8420396",
+      "4229092572496653058_8420396",
+      "5426490106444543503_8420396"
+    ],
+    "durations": [964, 1313],
+    "densities": [0, 171, 28],
+    "circular": ""
+  },
+  {
+    "color": 934700,
+    "name": ".test",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "-2845088863133483978_934700",
+      "-2845088863133483978_934700"
+    ],
+    "durations": [908],
+    "densities": [0, 155],
+    "circular": ""
+  },
+  {
+    "color": 13021297,
+    "name": "temp",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "-2819019319740366553_13021297",
+      "-2819019319740366553_13021297"
+    ],
+    "durations": [0],
+    "densities": [0, 0],
+    "circular": ""
+  },
+  {
+    "color": 11148830,
+    "name": "Керенско-Суриковская линия|Kerensko-Surikovkaya Line||Track 2",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "-3672144912401530487_11148830",
+      "-4195576870400564211_11148830",
+      "-5380681368370404036_11148830"
+    ],
+    "durations": [1199, 1127],
+    "densities": [0, 34, 154],
+    "circular": ""
+  },
+  {
+    "color": 16777215,
+    "name": "·TEMP· 183",
+    "number": "",
+    "type": "train_normal",
+    "stations": [
+      "3790399003438373700_16777215",
+      "3790399003438373700_16777215",
+      "3790399003438373700_16777215"
+    ],
+    "durations": [0, 0],
+    "densities": [0, 0, 0],
+    "circular": ""
+  }
+]

@@ -1,0 +1,110 @@
+{
+    "-4195576870400564211": {
+      "name": "Суриковский вокзал|Surikovsky terminal",
+      "color": 10032672,
+      "zone": 13,
+      "x": 1228,
+      "z": 4878,
+      "connections": []
+    },
+    "-7777892213810141562": {
+      "name": "Рошинский Проспект Станция поезда|Roshinky prospekt train station",
+      "color": 525990,
+      "zone": 13,
+      "x": 1259,
+      "z": 5438,
+      "connections": [
+        "-5380681368370404036"
+      ]
+    },
+    "4229092572496653058": {
+      "name": "雪城河畔|Snowtown Riverside",
+      "color": 7276552,
+      "zone": 0,
+      "x": 3077,
+      "z": -4860,
+      "connections": []
+    },
+    "-1681291607264729468": {
+      "name": "雪城|Snowtown",
+      "color": 7118647,
+      "zone": 0,
+      "x": 3070,
+      "z": -5369,
+      "connections": []
+    },
+    "-2747362958994019593": {
+      "name": "Furzan Grand Station",
+      "color": 5528162,
+      "zone": 0,
+      "x": 3484,
+      "z": -6131,
+      "connections": []
+    },
+    "-1320736708412813150": {
+      "name": "Винокурова улица|Vinokurova Ulitsa",
+      "color": 5664269,
+      "zone": 11,
+      "x": 1400,
+      "z": 5383,
+      "connections": []
+    },
+    "-7135146909227703467": {
+      "name": "tobolsk tram test",
+      "color": 12601198,
+      "zone": 0,
+      "x": 1381,
+      "z": 5302,
+      "connections": []
+    },
+    "-5380681368370404036": {
+      "name": "Рошинский Проспект|Roshinsky Prospekt",
+      "color": 2004996,
+      "zone": 10,
+      "x": 1318,
+      "z": 5380,
+      "connections": [
+        "-7777892213810141562"
+      ]
+    },
+    "-3672144912401530487": {
+      "name": "Библиотека имени Пушкина|Biblioteka imeni Pushkina",
+      "color": 559174,
+      "zone": 10,
+      "x": 808,
+      "z": 4632,
+      "connections": []
+    },
+    "5426490106444543503": {
+      "name": "雪山|SnowHill",
+      "color": 7428193,
+      "zone": 0,
+      "x": 3482,
+      "z": -4622,
+      "connections": []
+    },
+    "-2845088863133483978": {
+      "name": "Ashwood Promenade Rd.",
+      "color": 15073280,
+      "zone": 0,
+      "x": 2474,
+      "z": 991,
+      "connections": []
+    },
+    "-2819019319740366553": {
+      "name": "Мойнаки Moinaki",
+      "color": 13238272,
+      "zone": 0,
+      "x": 20735,
+      "z": 9467,
+      "connections": []
+    },
+    "3790399003438373700": {
+      "name": "Jachowice stary port",
+      "color": 2934331,
+      "zone": 0,
+      "x": -3304,
+      "z": 3472,
+      "connections": []
+    }
+  }
