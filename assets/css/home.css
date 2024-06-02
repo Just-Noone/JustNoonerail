@@ -80,6 +80,23 @@
   vertical-align: middle;
   z-index: 1;
 }
+
+@media screen and (max-width: 970px)
+{
+  .heromain{
+    width: 100%;
+    padding: 25px;
+    height: 500px;
+    position: absolute;
+    display: grid;
+    align-items: center;
+    vertical-align: middle;
+    z-index: 1;
+  }
+}
+
+
+
 .typedjs{
   background-color: var(--main);
   min-width: 150px;
@@ -203,7 +220,7 @@
   align-self: center;
   vertical-align: middle;
   padding: 10px 5px 10px 5px;
-  margin: 10px 30px 10px 30px;
+  margin: 10px 30px 10px 30px; 
   background-color: var(--magenta);
   color: var(--white);
   border-radius: 5px;
@@ -228,3 +245,4 @@
 .tickets-header{
   width: 100%;
 }
+

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css);
+
+:root {
+    --purple : #a100e5;
+    --white : #fff;
+    --lwhite : #eeeeee;
+    --black : #000;
+    --magenta : #ff00ff;
+    --cyan : #00ffff;
+    --yellow : #ffff00;
+    --orange : #ffa500;
+    --green : #008000;
+    --blue : #0000ff;
+    --red : #ff0000;
+    --lgray : #b4b4b4;
+    --dgray : #282828;
+  }
+  
+
+@media screen and (max-width: 970px)
+{
+  .mobilenav{
+    display: flex;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-around;
+    align-content: flex-end;
+    align-items: flex-end;
+    z-index: 1000000;
+  }
+
+  .mobilemenu{
+    background-color: var(--purple);
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-content: flex-start;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+  .mobilemenulist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple);
+    height: 100%;
+    width: 100%;
+  }
+
+  .mobilenavlink{
+    margin: 10px;
+  }
+}

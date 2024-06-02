@@ -24,13 +24,20 @@ head{
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-nav{
+.pcnav{
   position: fixed;
   z-index: 99;
   width: 100%;
   white-space: nowrap;
   
   background: #a100e5;
+}
+
+@media screen and (max-width: 970px)
+{
+  .pcnav{
+    display: none;
+  }
 }
 .Signup{
 background: #b300ff;

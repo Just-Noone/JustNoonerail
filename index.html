@@ -21,13 +21,14 @@
         <!--Icons--> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="./assets/css/menu.css"> <!-- Menu CSS -->
         <link rel="stylesheet" href="./assets/css/home.css"> <!-- Home CSS -->
+        <link rel="stylesheet" href="./assets/css/mobilenav.css"> <!-- Mobilenav CSS -->
     </head>
     <body>
         <!--[if lt IE 7]> 
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <!--Menu--> <nav>
+        <!--Menu--> <nav class="pcnav">
           <div class="wrapper">
             <div class="logo" style="display: flex; align-items: center;">
               <a href="../" class="logolink" style="width: 100%;">
@@ -87,6 +88,33 @@
           </div>
         </nav>
 
+        <nav class="mobilenav">
+          <ul class="mobilemenu">
+            <li class="mobilemenulist">
+              <a href="./index.html" class="mobilenavlink">
+                <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+              </a>
+
+              <a href="./transit.html" class="mobilenavlink">
+                <i class="fa-solid fa-train" style="color: #ffffff;"></i>
+              </a>
+
+              <a href="./services.html" class="mobilenavlink">
+                <i class="fa-solid fa-city" style="color: #ffffff;"></i>
+              </a>
+
+              <a href="./jcard.html" class="mobilenavlink">
+                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>
+              </a>
+
+              <a href="./account.html" class="mobilenavlink" style="display: flex;align-content: center;align-items: center;">
+                <img src="./assets/png/default-avatar.png" style="width: 20px; border-radius: 100%;">
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
           <!--Hero--> <section class="hero">
             <div class="heromainb">
               <div class="heromain">
@@ -112,6 +140,5 @@
           </form>
             </div>
           </section>
-        <script src="" async defer></script>
     </body>
 </html>
