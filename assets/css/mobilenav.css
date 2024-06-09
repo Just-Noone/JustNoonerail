@@ -29,6 +29,7 @@
     align-content: flex-end;
     align-items: flex-end;
     z-index: 1000000;
+    pointer-events: none;
   }
 
   .mobilemenu{

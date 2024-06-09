@@ -22,8 +22,33 @@
         <link rel="stylesheet" href="./assets/css/menu.css"> <!-- Menu CSS -->
         <link rel="stylesheet" href="./assets/css/home.css"> <!-- Home CSS -->
         <link rel="stylesheet" href="./assets/css/mobilenav.css"> <!-- Mobilenav CSS -->
+        <link rel="script" href="./assets/js/cookiebanner.js">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     </head>
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9HYZX0MGBT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9HYZX0MGBT');
+</script>
+  <!-- End Google Tag Manager -->
+
     <body>
+      <div id="snackbar-container" class="snackbar-container"></div>
+
+      <div id="cookie-notification" class="cookie-notification">
+        <p>We use cookies to ensure you get the best experience on our website. <a href="#" class="learnmore">Learn more</a></p>
+        <button id="accept-cookies" class="accept-button"><i class="fa-solid fa-check" style="margin-right: 5px;"></i>Accept</button>
+    </div>
+
+      <div class="preloader" id="preloader">
+        <img src="./assets/svg/loader.svg" style="scale: 50%;">
+      </div>
         <!--[if lt IE 7]> 
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -127,18 +152,106 @@
           </section>
           <section class="stickets">
             <div class="tickets">
-              <form class="inputs" action="./assets/php/" method="post">
-              <div class="tickets-header">
-                <h1 style="text-align: center;">Tickets</h1>
-                <div class="inputs">
+                <form id="routeForm" class="inputs" action="" method="post">
+                    <div class="tickets-header">
+                        <h1 style="text-align: center;">Tickets</h1>
+                        <div class="inputs">
+                            <input placeholder="Tickets from" type="text" id="ticketsfrom" class="ticketsfrom">
+                            <input placeholder="Tickets to" type="text" id="ticketsto" class="ticketsto">
+                            <button id="SubTick" class="SubTick" type="submit"><i class="fa-solid fa-arrow-right" style="margin-right: 2px;"></i>Submit</button>
+                        </div>
+                        <div id="error-message" style="visibility: hidden; position:absolute"></div>
+                        <div id="results"></div>
+                        <div id="arrivals"></div>
+                        <button id="show-more" style="display: none;">Show More</button>
+                        <button id="expand-all" style="display: none;">Expand All</button>
+                    </div>
+                </form>
+                <div id="from-suggestions" class="autocomplete-suggestions"></div>
+                <div id="to-suggestions" class="autocomplete-suggestions"></div>
+                <script src="./assets/js/routefinder.js"></script>
+                <script src="./assets/js/fval.js"></script>
+            </div>
+        </section>
+        <section class="partners">
 
-              <input placeholder="Tickets from" type="text" id="ticketsfrom" class="ticketsfrom">
-              <input placeholder="Tickets to" id="ticketsto" class="ticketsto">
-              <input id="SubTick" class="SubTick" type="submit">
-              <div id="results"></div>
+          <div class="hboxpartners">
+          <h1>Our partners</h1>
+        </div>
+          <div class="scroller" data-speed="slow">
+            <div class="scroller__inner">
+              <img src="./assets/png/fivem.png" alt="" class="scroller__inner__img"/>
+              <img src="./assets/png/TJ.png" alt=""  class="scroller__inner__img"/>
+              <img src="./assets/png/TFT.png" alt="" class="scroller__inner__img" />
+              <img src="./assets/png/ICN.png" alt="" class="scroller__inner__img" />
+              <img src="./assets/png/CP.png" alt="" class="scroller__inner__img" />
+              <img src="./assets/png/SRFET.png" alt="" class="scroller__inner__img" />
+              <img src="./assets/png/Yuzhd.png" alt="" class="scroller__inner__img" />
+              <img src="./assets/png/Pärail.png" alt="" class="scroller__inner__img" />
+              <img src="./assets/png/SCNB.png" alt="" class="scroller__inner__img" />
             </div>
-          </form>
-            </div>
-          </section>
-    </body>
+          </div>
+          <script src="./assets/js/scroller.js"></script>
+        </section>
+
+<script>
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+loader.style.display = "none"
+})
+
+</script>
+<script>
+  if ( window.history.replaceState ) {
+      window.history.replaceState( null, null, window.location.href );
+  }
+</script>
+
+
+<!--Cookie banner info script-->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  var cookieNotification = document.getElementById('cookie-notification');
+  var acceptButton = document.getElementById('accept-cookies');
+
+  // Check if the cookie has been set
+  if (!getCookie('cookies_accepted')) {
+      // Show the cookie notification with fade-in animation
+      cookieNotification.classList.add('show');
+  }
+
+  // When the accept button is clicked
+  acceptButton.addEventListener('click', function () {
+      // Set a cookie to remember the user's choice
+      setCookie('cookies_accepted', 'true', 365);
+      // Hide the cookie notification
+      cookieNotification.classList.remove('show');
+  });
+
+  function setCookie(name, value, days) {
+      var expires = "";
+      if (days) {
+          var date = new Date();
+          date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+          expires = "; expires=" + date.toUTCString();
+      }
+      document.cookie = name + "=" + (value || "") + expires + "; path=/";
+  }
+
+  function getCookie(name) {
+      var nameEQ = name + "=";
+      var ca = document.cookie.split(';');
+      for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+      }
+      return null;
+  }
+});
+
+</script>
+
+</body>
 </html>

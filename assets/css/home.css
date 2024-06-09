@@ -3,6 +3,8 @@
 
 :root {
 
+  background-color: var(--white);
+
   /** Main **/
 
   --main : #a100e5;
@@ -105,6 +107,7 @@
   outline: var(--white);
   border-radius: 5px;
   padding: 30px 0px 30px 00px;
+  z-index: 5;
   color: var(--white);
   font-size: 50px;
   align-self: center;
@@ -148,9 +151,17 @@
   .tickets {
   display: block;
   width: 100%;
+  top: 0;
   height: 100%;
   border-radius: 10px;
   padding: 30px 10px 30px 10px;
+  }
+
+  .stickets{
+    padding: 20px;
+    width: 100%;
+    height: 350px;
+    background-color: var(--main);
   }
 }
 .ticketsfrom{
@@ -246,3 +257,179 @@
   width: 100%;
 }
 
+.snackbar {
+  visibility: hidden;
+  width: 200px; /* Fixed width for uniformity */
+  background-color: #fb3c3c;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: relative;
+  z-index: 1;
+  font-size: 17px;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  transform: translateY(100%);
+  margin-bottom: 10px;
+}
+
+.snackbar.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.snackbar.hide {
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media (max-width: 970px) {
+  .snackbar {
+      transform: translateY(-100%);
+  }
+
+  .snackbar.show {
+      transform: translateY(0);
+  }
+}
+
+.snackbar-container {
+  position: fixed;
+  cursor: pointer;
+  right: 30px;
+  bottom: 30px;
+  z-index: 110;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 10px;
+}
+
+@media (max-width: 970px) {
+  .snackbar-container {
+      bottom: auto;
+      top: 30px;
+      flex-direction: column;
+  }
+}
+
+.preloader{
+  position:fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--white);
+  z-index: 100000000000;
+  width: 100%;
+  height: 100%;
+
+}
+
+.scroller {
+  max-width: 100%;
+  transition: 0.5 all;
+}
+
+.scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.hboxpartners{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroller__inner__img{
+  width: 150px;
+  height: 150px;
+  transition: 0.5 all;
+}
+
+.cookie-notification {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--main);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 100000000;
+}
+
+.cookie-notification.show {
+  display: block;
+  opacity: 1;
+}
+
+.accept-button {
+  background-color: var(--magenta);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  border-radius: 1000px;
+}
+
+.accept-button:hover {
+  background-color: var(--lpurple);
+}
+
+.learnmore{
+  color: var(--lpurple);
+}
+
+.learnmore:hover{
+  color: var(--white);
+}
